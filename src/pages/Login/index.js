@@ -18,9 +18,9 @@ export default function Login() {
         e.preventDefault();
 
         try {
-            const response = await api.get('/users', {email} );
+            const response = await api.post('/authenticate', { email, password } );
 
-            console.log(response);
+            console.log(response.config.data);
             
             //localStorage.setItem('userEmail', email);
             //localStorage.setItem('userId', response.data.id);
