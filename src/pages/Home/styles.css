@@ -1,0 +1,38 @@
+.home-container {
+    background-color: #dfe7fd;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    max-width: 240px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.menuitem { 
+    color: #0c4b0c;
+}
+
+.ListItemText {
+    color: #e92929;
+}
+
+.logo {
+    height: 25px;
+    width: 115px;
+    position: absolute;
+    top: 4px;
+    left: 20px;
+}
+
+.image-background {
+    opacity: 0.4;
+}

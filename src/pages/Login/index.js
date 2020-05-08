@@ -20,13 +20,11 @@ export default function Login() {
         try {
             const response = await api.post('/authenticate', { email, password } );
 
-            console.log(response.config.data);
-            
             //localStorage.setItem('userEmail', email);
             //localStorage.setItem('userId', response.data.id);
             //localStorage.setItem('userName', response.data.name);
 
-            history.push('/newpassword');
+            history.push('/home');
         } catch (err) {
             alert('Falha no Login, tente novamente.')
         }
