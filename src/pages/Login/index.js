@@ -38,6 +38,7 @@ export default function Login() {
                     <h1>Faça seu login</h1>
 
                     <input 
+                        type="email"
                         placeholder="Seu e-mail" 
                         value={email}
                         onChange={e => setEmail(e.target.value)}
