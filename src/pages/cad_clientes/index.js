@@ -22,7 +22,15 @@ function Cad_clientes() {
             <Sidebar items={items} />
             <div className="cad-cliente-imput"> 
                 <img className="logo" src={logoImg} alt="VendasApp 1.0" />
-                <h1>Cadastro de Clientes</h1>
+                <div className="cabecalho-cliente">
+                    <h1>Cadastro de Clientes</h1>
+                    <button type="button" className="button-procurar-cliente">
+                        Procurar
+                    </button>
+                    <button type="button" className="button-novo-cliente">
+                        Cadastrar Cliente
+                    </button>
+                </div>
 
                 <ul>
                     {clients.map(client => (

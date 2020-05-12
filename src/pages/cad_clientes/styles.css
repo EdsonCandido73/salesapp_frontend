@@ -46,10 +46,46 @@
     background: #ffffff;
 }
 
-.cad-cliente-imput h1 {
+.cabecalho-cliente {
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
+    min-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.button-novo-cliente {
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    background: #025f06;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    transition: filter 0.2s;
+}
+
+.button-procurar-cliente {
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    background: #025f06;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    transition: filter 0.2s;
+}
+
+.cabecalho-cliente button:hover {
+    opacity: 0.8;
 }
 
 .cad-cliente-imput ul {
@@ -71,13 +107,13 @@
     bottom: 20px;
     width: 60px;
     height: 30px;
-    background: #e02041;
+    background: #025f06;
     border: 0;
     border-radius: 8px;
     color: #FFF;
     text-align: center;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 11px;
     transition: filter 0.2s;
 }
 
