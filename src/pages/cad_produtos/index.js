@@ -9,18 +9,18 @@ import api from '../../services/api';
 
 import logoImg from '../../assets/logo.png';
 
-function Cad_clientes() {
+function Cad_produtos() {
     let history = useHistory();
-    const [clients, setClientes] = useState([]);
+    const [products, setProdutos] = useState([]);
 
     useEffect(() => {
-        api.get('clients').then(response => {
-            setClientes(response.data);
+        api.get('products').then(response => {
+            setProdutos(response.data);
         })
     }, []);
 
-function handleClickExpand(client) {
-    history.push("Ficha_cad_cliente" , client );
+function handleClickExpand(produto) {
+    history.push("Ficha_cad_produto" , produto );
 }
 
   return (
@@ -29,32 +29,32 @@ function handleClickExpand(client) {
             <div className="cad-cliente-imput"> 
                 <img className="logo" src={logoImg} alt="VendasApp 1.0" />
                 <div className="cabecalho-cliente">
-                    <h1>Cadastro de Clientes</h1>
+                    <h1>Cadastro de Produtos</h1>
                     <button type="button" className="button-procurar-cliente">
                         Procurar
                     </button>
                     <button type="button" className="button-novo-cliente">
-                        Novo Cliente
+                        Novo Produto
                     </button>
                 </div>
 
                 <ul>
-                    {clients.map(client => (
-                        <li key={client.id}>
-                            <strong>Cod. - Nome:</strong>
-                            <p>{client.id} - {client.name}</p>
+                    {products.map(produto => (
+                        <li key={produto.id}>
+                            <strong>Cod. - Descrição:</strong>
+                            <p>{produto.codbar} - {produto.description}</p>
                     
-                            <strong>Apelido:</strong>
-                            <p>{client.nickname}</p>
+                            <strong>Marca:</strong>
+                            <p>{produto.manufacturer}</p>
                     
-                            <strong>Cidade / Telefone:</strong>
-                            <p>{client.city} / {client.phone1}</p>
+                            <strong>Unidade / Preço venda:</strong>
+                            <p>{produto.unit} / {produto.saleprice}</p>
                     
                             <button 
                                 type="button"
                                 onClick={() => history.push({
-                                    pathname: `ficha_cad_cliente/${client.id}`,
-                                    state: { detail: {client} }
+                                    pathname: `ficha_cad_produto/${produto.id}`,
+                                    state: { detail: {produto} }
                                 })}>
                                 Abrir
                             </button>
@@ -66,4 +66,4 @@ function handleClickExpand(client) {
     )
 }
 
-export default Cad_clientes
+export default Cad_produtos

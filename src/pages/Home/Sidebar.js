@@ -12,7 +12,6 @@ function SidebarItem({ url_item, label, items, depthStep = 20, depth = 0, ...res
   function handleClick() {
     if (url_item) {
       history.push(`${url_item}`);
-      console.log(url_item);
     }
   }
     
