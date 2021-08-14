@@ -1,6 +1,13 @@
 # salesapp_frontend
 
-## Projeto pessoal (em construção):
+## Projeto pessoal (em construção)
+
+### Tecnologias utilizadas:
+
+- React
+- Material UI
+- Axios
+
 
 ## Aplicativo de controle administrativo para pessoas que trabalham com vendas diretas 
 
@@ -9,7 +16,5 @@
 - Controle de Pedidos
 - Controle de Estoque
 - Contas a receber
-
-```
 
 Projeto desenvolvido por [Edson Cândido](https://github.com/EdsonCandido73)
